@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 from wtform import MyForm
+from flask_bootstrap import Bootstrap5
+
 
 '''
 Red underlines? Install the required packages first: 
@@ -15,6 +17,7 @@ This will install the packages from requirements.txt for this project.
 '''
 
 app = Flask(__name__)
+bootstrap = Bootstrap5(app)
 
 app.secret_key = "some secret string"
 
